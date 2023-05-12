@@ -3,8 +3,8 @@ ESX = exports["es_extended"]:getSharedObject()
 local draw = false
 local visiblePlayers = {}
 
-RegisterNetEvent('wx_users:drawText')
-AddEventHandler('wx_users:drawText',function()
+RegisterNetEvent('wx_users:showPlayers')
+AddEventHandler('wx_users:showPlayers',function()
     if draw then
         draw = false
         TriggerEvent('chat:addMessage', {
